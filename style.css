@@ -25,6 +25,8 @@ body {
     width: 35%;
     margin-left: auto;
     height: 40px;
+    padding: 0 10px;
+    border-radius: 15px;
 }
 
 .flex {
@@ -35,23 +37,45 @@ body {
 hr {
     border-color: #B99434;
     background-color: #B99434;
+    margin: 0;
 }
 
-.card-container {
-    margin: 10px;
+.movies-grid {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+    gap: 25px;
 }
 
-.card {
-    background-color: white;
+.movie-card {
+    background-color: #f2f1f1;
     max-width: max-content;
     padding: 15px 20px;
     border-radius: 30px;
     color: #292929;
 }
 
-.card img {
-    width: 300px;
-    height: 400px;
+.card-info{
+    width: 320px;
+}
+
+.movie-poster {
+    width: 310px;
+    height: 450px;
     object-fit: cover;
     object-position: 20% 10%;
+    border-radius: 10px;
+}
+
+#load-more-movies-btn {
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #B99434;
 }
