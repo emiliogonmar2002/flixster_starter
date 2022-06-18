@@ -9,21 +9,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Flixter</title>
+    <title>Flixster</title>
 </head>
 <body>
     
     <div id="header" class="flex">
-        <p>Flix<span style="color:#B99434">ter</span></p>
+        <p onclick="location.reload()" id="logo">Flixs<span style="color:#B99434">ter</span></p>
         <form class="search-form">
             <input type="text" placeholder="Search" class="search-input">
             <button type="submit" style="display: none;">Search</button>
+            <button id="erase" class="pointer">Close</button>
         </form>
     </div>
 
     <hr style="margin-bottom: 30px;"/>
 
     <div class="movies-grid"></div>
+        <!-- <div class="movie-card"></div> -->
+    <div class="movie-window">
+        
+    </div>
 
     <button id="load-more-movies-btn">Load More</button>
     <script src="script.js"></script>

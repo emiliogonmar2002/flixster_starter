@@ -5,14 +5,43 @@ body {
     color: white;
 }
 
+.movie-window {
+    position: fixed;
+    height: 500px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    background-color: #292929;
+    width: 40%;
+    padding: 50px;
+    border-radius: 20px;
+    display: none;
+}
+
+.movie-window-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
 #header {
     font-weight: 700;
     font-size: 54px;
     padding: 10px 20px;
 }
 
-#header p {
+#logo {
     margin: 0;
+}
+
+#logo:hover {
+    cursor: pointer;
 }
 
 #header form {
@@ -27,6 +56,12 @@ body {
     height: 40px;
     padding: 0 10px;
     border-radius: 15px;
+}
+
+#erase {
+    border: 0;
+    background-color: #f2f1f1;
+    margin-left: 5px;
 }
 
 .flex {
@@ -78,4 +113,8 @@ hr {
     height: 40px;
     border-radius: 10px;
     background-color: #B99434;
+}
+
+.pointer:hover {
+    cursor: pointer;
 }
